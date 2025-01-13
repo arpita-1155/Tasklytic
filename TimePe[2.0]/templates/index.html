@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App UI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>My Mobile App</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="card">
+            <h2>Task 1</h2>
+            <p>Complete the wireframe design for the project.</p>
+        </section>
+
+        <section class="card">
+            <h2>Task 2</h2>
+            <p>Prepare presentation for the next meeting.</p>
+        </section>
+
+        <section class="card">
+            <h2>Task 3</h2>
+            <p>Revise project milestones and assign tasks.</p>
+        </section>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/tasks">Tasks</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

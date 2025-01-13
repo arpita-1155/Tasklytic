@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Task List</h1>
+    </header>
+
+    <main>
+        {% for task in tasks %}
+        <section class="card">
+            <h2>{{ task.title }}</h2>
+            <p>{{ task.description }}</p>
+        </section>
+        {% endfor %}
+    </main>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/tasks">Tasks</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
